@@ -1,0 +1,52 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.profile_card {
+    width: 600px;
+    height: 280px;
+    border: 3px solid grey;
+    margin: 10px;
+}
+
+.profile {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    top: -50px;
+    height: 230px;
+}
+
+.profile_name {
+    font-size: 18pt;
+}
+
+.profile_image {
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+    border-radius: 50px;
+    border: 5px solid white;
+    margin: 0px;
+    box-shadow: 0 0 20px grey;
+}
+
+.banner {
+    background-color: skyblue;
+    height: 80px;
+}
+
+.options img {
+    height: 15px;
+}
+
+.profile_city img {
+    height: 15px;
+}
+.profile_edit > img {
+    margin-right: 5px;
+    height: 15px;
+}
