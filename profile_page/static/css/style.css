@@ -10,7 +10,6 @@
 }
 
 .nav-title {
-    color: white;
     font-size: 24pt;
 }
 
@@ -27,7 +26,7 @@
     justify-content: flex-start;
 }
 
-.nav-links p,a {
+.nav-links p, .nav-links a {
     color: white;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
@@ -45,18 +44,62 @@ a.active {
 
 .banner-main {
     background-color: steelblue;
+    height: 80px;
 }
 
 .banner-minor {
     background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
 }
 
 .card {
-    border: 3px solid red;
-    min-width: 80px;
-    min-height: 200px;
+    border: 2px solid gray;
+    margin: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
+.card > :not(.banner-minor, .banner-main) {
+    display: flex;
+    padding: 10px;
+    justify-items: center;
+}
+
+.counter {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 2px 8px;
+    margin-right: 10px;
+}
+
+.connection-request {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection-image {
+    height: 20pt;
+}
+
+.connection {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.connection * {
+    margin-right: 10px;
+}
+
+.connection-disposition a img {
+    height: 20pt;
+}
 .column {
     display: flex;
     justify-content: space-around;
@@ -65,6 +108,58 @@ a.active {
 .flex-3 {
     flex: 3;
 }
-.flex-1 {
-    flex: 1;
+.flex-2 {
+    flex: 2;
+}
+
+.profile {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: fit-content;
+    position: relative;
+    top: -55px;
+}
+
+#profile-card {
+    height: fit-contents;
+}
+
+.profile > * {
+    margin: 5px;
+}
+
+.profile-image{
+    height: 80px;
+}
+
+.profile-city {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-city img {
+    height: 12pt;
+}
+
+.profile-edit {
+    display: flex;
+    align-items: center;
+}
+
+.profile-edit img {
+    height: 12pt;
+}
+
+.education-line-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#view-more {
+    border: 2px solid gray;
 }
