@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -45,6 +46,7 @@ a.active {
 .banner-main {
     background-color: steelblue;
     height: 80px;
+    margin-bottom: 40px;
 }
 
 .banner-minor {
@@ -119,8 +121,13 @@ a.active {
     justify-content: space-evenly;
     align-items: flex-start;
     height: fit-content;
-    position: relative;
-    top: -55px;
+}
+
+.profile-image{
+    height: 80px;
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 #profile-card {
@@ -129,10 +136,6 @@ a.active {
 
 .profile > * {
     margin: 5px;
-}
-
-.profile-image{
-    height: 80px;
 }
 
 .profile-city {
@@ -161,5 +164,9 @@ a.active {
 }
 
 #view-more {
-    border: 2px solid gray;
+    border-top: 2px solid gray;
+}
+
+p.definition_word {
+    font-size: 25pt;
 }
